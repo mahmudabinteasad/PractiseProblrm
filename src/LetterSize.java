@@ -6,19 +6,19 @@ public class LetterSize{
         int first = sc.nextInt();
         System.out.print("Please enter 2nd value: ");
         int second = sc.nextInt();
-        double sum = (first + second);
-        double difference = (first - second);
-        double product = (first * second);
-        double average = (first + second)/2;
-        double distance = Math.abs(difference);;
-        double max = Math.max(first, second);
-        double min = Math.min(first, second);
-        System.out.printf("Summation: %8.2f \n", sum);
-        System.out.printf("Difference: %8.2f \n", difference);
-        System.out.printf("Product: %8.2f \n", product);
+        int sum = (first + second);
+        int difference = (first - second);
+        int product = (first * second);
+        double average = (double)(first + second)/2;
+        int distance = Math.abs(difference);;
+        int max = Math.max(first, second);
+        int min = Math.min(first, second);
+        System.out.printf("Summation:   %d \n", sum);
+        System.out.printf("Difference:  %d \n", difference);
+        System.out.printf("Product:     %d \n", product);
         System.out.printf("Average: %8.2f \n", average);
-        System.out.printf("Distance: %8.2f \n", distance);
-        System.out.printf("Maximum: %8.2f \n", max);
-        System.out.printf("Minimum: %8.2f \n", min);
+        System.out.printf("Distance:    %d \n", distance);
+        System.out.printf("Maximum:     %d \n", max);
+        System.out.printf("Minimum:     %d \n", min);
     }
 }
