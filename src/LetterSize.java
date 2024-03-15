@@ -2,18 +2,15 @@ import java.util.Scanner;
 public class LetterSize {
  public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a radius: ");
-        double radius = sc.nextDouble();
-        double area = 3.14 * Math.pow(radius, 2);
-        double circumference = 2 * 3.14 * radius;
-        double volume = (4.0 / 3.0) * 3.14 * Math.pow(radius, 3);
-        double surfacearea = 4 * 3.14 * Math.pow(radius, 2);
-       // double inches = meters * 39.37008;
-        System.out.printf("Circle:\n");
+        System.out.print("Enter length: ");
+        double length = sc.nextDouble();
+        System.out.print("Enter width: ");
+        double width = sc.nextDouble();
+        double area = length * width;
+        double perimeter = 2 * (length + width);
+        double diagonal = Math.sqrt(Math.pow(length, 2) + Math.pow(width, 2));
         System.out.printf("Area: %.2f \n", area);
-        System.out.printf("Circumference: %.2f \n", circumference);
-        System.out.printf("\nSphere:\n");
-        System.out.printf("Volume: %.2f \n", volume);
-        System.out.printf("Surface Area: %.2f \n", surfacearea);
+        System.out.printf("Perimeter: %.2f \n", perimeter);
+        System.out.printf("Length of Diagonal: %.2f \n", diagonal);
     }
 }
