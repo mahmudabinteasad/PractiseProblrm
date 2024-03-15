@@ -1,14 +1,24 @@
-import java.util.*;
+import java.util.Scanner;
 public class LetterSize{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Please enter a value: ");
-        int i = sc.nextInt();
-        double square = (i * i);
-        double cube = (i * i * i);
-        double fourth = (Math.pow(i, 4));
-        System.out.printf("Square: %8.2f \n", square);
-        System.out.printf("Cube: %8.2f \n", cube);
-        System.out.printf("Fourth: %8.2f \n", fourth);
+        System.out.print("Please enter 1st value: ");
+        int first = sc.nextInt();
+        System.out.print("Please enter 2nd value: ");
+        int second = sc.nextInt();
+        double sum = (first + second);
+        double difference = (first - second);
+        double product = (first * second);
+        double average = (first + second)/2;
+        double distance = Math.abs(difference);;
+        double max = Math.max(first, second);
+        double min = Math.min(first, second);
+        System.out.printf("Summation: %8.2f \n", sum);
+        System.out.printf("Difference: %8.2f \n", difference);
+        System.out.printf("Product: %8.2f \n", product);
+        System.out.printf("Average: %8.2f \n", average);
+        System.out.printf("Distance: %8.2f \n", distance);
+        System.out.printf("Maximum: %8.2f \n", max);
+        System.out.printf("Minimum: %8.2f \n", min);
     }
 }
