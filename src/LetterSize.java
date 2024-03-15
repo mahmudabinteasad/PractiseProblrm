@@ -1,24 +1,15 @@
 import java.util.Scanner;
-public class LetterSize{
-    public static void main(String[] args){
+public class LetterSize {
+ public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Please enter 1st value: ");
-        int first = sc.nextInt();
-        System.out.print("Please enter 2nd value: ");
-        int second = sc.nextInt();
-        int sum = (first + second);
-        int difference = (first - second);
-        int product = (first * second);
-        double average = (double)(first + second)/2;
-        int distance = Math.abs(difference);;
-        int max = Math.max(first, second);
-        int min = Math.min(first, second);
-        System.out.printf("Summation:   %d \n", sum);
-        System.out.printf("Difference:  %d \n", difference);
-        System.out.printf("Product:     %d \n", product);
-        System.out.printf("Average: %8.2f \n", average);
-        System.out.printf("Distance:    %d \n", distance);
-        System.out.printf("Maximum:     %d \n", max);
-        System.out.printf("Minimum:     %d \n", min);
+        System.out.print("Enter a distance in meters: ");
+        double meters = sc.nextDouble();
+        double miles = meters * 0.000621371;
+        double feet = meters * 3.28084;
+        double inches = meters * 39.37008;
+        System.out.printf("%.2f meters is equal to:\n", meters);
+        System.out.printf("%.2f miles\n", miles);
+        System.out.printf("%.2f feet\n", feet);
+        System.out.printf("%.2f inches\n", inches);
     }
 }
